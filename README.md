@@ -1,2 +1,3 @@
-# vanilla-bootstrap
-A vanilla Bootstrap theme for Hugo
+# Vanilla Bootstrap
+
+A vanilla [Bootstrap](https://getbootstrap.com/) theme for [Hugo](https://gohugo.io/)
