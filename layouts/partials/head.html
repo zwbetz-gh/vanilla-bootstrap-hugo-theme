@@ -7,5 +7,9 @@
   href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
   crossorigin="anonymous">
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  {{ $title := print .Title " | " .Site.Title }}
+  {{ if .IsHome }}
+  {{ $title := .Site.Title }}
+  {{ end }}
+  <title>{{ $title }}</title>
 </head>
