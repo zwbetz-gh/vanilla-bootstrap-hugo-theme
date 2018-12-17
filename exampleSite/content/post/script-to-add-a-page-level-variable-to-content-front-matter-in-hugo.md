@@ -1,10 +1,7 @@
 ---
-title: "Script to add a page-level variable to content front matter in hugo"
-date: 2018-10-10T12:43:20-05:00
-publishdate: 2018-10-10
-lastmod: 2018-10-11
-draft: false
+date: "2018-10-10"
 tags: ["hugo", "command-line", "awk"]
+title: "Script to add a page-level variable to content front matter in hugo"
 ---
 
 This was originally a question posed on the [hugo discussion forums](https://discourse.gohugo.io/t/set-frontmatter-params-in-list-template/14645). 

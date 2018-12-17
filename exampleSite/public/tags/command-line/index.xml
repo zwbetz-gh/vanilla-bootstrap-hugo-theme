@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Command Line on Some Title</title>
+    <title>Command Line on Vanilla Bootstrap</title>
     <link>http://localhost:1313/tags/command-line/</link>
-    <description>Recent content in Command Line on Some Title</description>
+    <description>Recent content in Command Line on Vanilla Bootstrap</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Oct 2018 12:43:20 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 10 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/tags/command-line/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Script to add a page-level variable to content front matter in hugo</title>
       <link>http://localhost:1313/script-to-add-a-page-level-variable-to-content-front-matter-in-hugo/</link>
-      <pubDate>Wed, 10 Oct 2018 12:43:20 -0500</pubDate>
+      <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/script-to-add-a-page-level-variable-to-content-front-matter-in-hugo/</guid>
       <description>This was originally a question posed on the hugo discussion forums.

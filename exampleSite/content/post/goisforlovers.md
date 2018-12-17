@@ -1,11 +1,8 @@
-+++
-title = "(Hu)go Template Primer"
-date = "2014-04-02"
-publishdate = "2014-04-02"
-lastmod = "2014-04-02"
-draft = false
-tags = ["go", "templates", "hugo"]
-+++
+---
+date: "2014-04-02"
+tags: ["go", "templates", "hugo"]
+title: "(Hu)go Template Primer"
+---
 
 Hugo uses the excellent [Go][] [html/template][gohtmltemplate] library for
 its template engine. It is an extremely lightweight engine that provides a very

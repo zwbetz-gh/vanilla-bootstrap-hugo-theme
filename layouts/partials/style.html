@@ -1,0 +1,10 @@
+<style>
+{{ with .Site.Params.containerMaxWidth }}
+.container {
+  max-width: {{ . | safeCSS }};
+}
+{{ end }}
+.navbar {
+  margin-bottom: 1em;
+}
+</style>

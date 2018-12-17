@@ -1,10 +1,15 @@
 ---
-title: "Migrate to Hugo from Jekyll"
-date: 2014-03-10
-publishdate: 2014-03-10
-lastmod: 2014-03-10
+date: "2014-03-10"
 draft: false
-tags: ["hugo", "jekyll", "migration", "git", "templates"]
+lastmod: "2014-03-10"
+publishdate: "2014-03-10"
+tags:
+- hugo
+- jekyll
+- migration
+- git
+- templates
+title: Migrate to Hugo from Jekyll
 ---
 
 ## Move static content to `static`

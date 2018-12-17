@@ -1,0 +1,29 @@
+baseURL: "https://example.com"
+languageCode: "en-us"
+title: "Vanilla Bootstrap"
+theme: "vanilla-bootstrap"
+
+taxonomies:
+  tag: "tags"
+
+permalinks: 
+  page: "/:filename/"
+  post: "/:filename/"
+
+menu:
+  main:
+  - name: "Posts"
+    url: "/post/"
+    weight: 1
+  - name: "Tags"
+    url: "/tags/"
+    weight: 2
+  - name: "About"
+    url: "/about/"
+    weight: 3
+  - name: "RSS"
+    url: "/index.xml"
+    weight: 4
+
+params:
+  containerMaxWidth: "800px"
