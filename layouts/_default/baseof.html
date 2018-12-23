@@ -1,12 +1,16 @@
 <!doctype html>
 <html lang="en">
-  {{- partial "head.html" . -}}
+  {{ partial "head.html" . }}
   <body>
-    {{- partial "nav.html" . -}}
     <div class="container">
-      {{- block "main" . }}{{- end }}
+      {{ partial "nav.html" . }}
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+      {{ partial "footer.html" . }}
     </div>
-    {{- partial "footer.html" . -}}
-    {{- partial "script.html" . -}}
+    {{ if eq .Site.Params.includeBootstrapJs true }}
+      {{ partial "script.html" . }}
+    {{ end }}
   </body>
 </html>

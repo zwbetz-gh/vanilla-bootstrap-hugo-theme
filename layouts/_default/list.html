@@ -2,10 +2,12 @@
 
 <h1>{{ .Title }}</h1>
 
-<ul>
 {{ range .Pages }}
-<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+<p>
+  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  <br>
+  {{ partial "date-and-tags.html" . }}
+</p>
 {{ end }}
-</ul>
 
 {{ end }}

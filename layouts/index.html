@@ -1,5 +1,8 @@
 {{ define "main" }}
 
-TODO use paginator to list posts with date, tags, and summary
+<div class="jumbotron text-center">
+  <h1 class="display-4">{{ .Site.Title }}</h1>
+  <p class="lead">{{ .Site.Params.homeText | markdownify }}</p>
+</div>
 
 {{ end }}

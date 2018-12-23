@@ -1,15 +1,5 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-  <div class="container">
-  <a class="navbar-brand" href="/"><strong>{{ .Site.Title }}</strong></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      {{ range .Site.Menus.main }}
-      <a class="nav-item nav-link" href="{{ .URL }}"><strong>{{ .Name }}</strong></a>
-      {{ end }}
-    </div>
-  </div>
-  </div>
+<nav class="nav justify-content-center">
+{{ range .Site.Menus.main }}
+  <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+{{ end }}
 </nav>

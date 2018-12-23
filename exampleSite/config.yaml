@@ -1,6 +1,6 @@
 baseURL: https://example.com
 languageCode: en-us
-title: Vanilla Bootstrap
+title: Vanilla
 theme: vanilla-bootstrap-hugo-theme
 
 taxonomies:
@@ -11,18 +11,22 @@ permalinks:
 
 menu:
   main:
-  - name: Posts
-    url: /post/
+  - name: Home
+    url: /
     weight: 1
+  - name: Blog
+    url: /post/
+    weight: 2
   - name: Tags
     url: /tags/
-    weight: 2
+    weight: 3
   - name: About
     url: /about/
-    weight: 3
-  - name: RSS
-    url: /index.xml
     weight: 4
 
 params:
-  containerMaxWidth: 800px
+  includeBootstrapJs: false
+  containerMaxWidth: 700px
+  dateFormat: January 2, 2006
+  homeText: Welcome to the Vanilla theme demo. Have a look around. Maybe even eat some ice cream.
+  footerText: Made with [Hugo](https://gohugo.io/) and [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).
