@@ -23,6 +23,9 @@ menu:
   - name: About
     url: /about/
     weight: 4
+  - name: RSS
+    url: /index.xml
+    weight: 5
 
 params:
   includeBootstrapJs: false
