@@ -1,8 +1,8 @@
 name = "Vanilla Bootstrap"
 license = "MIT"
-licenselink = "https://github.com/zwbetz-gh/vanilla-bootstrap/blob/master/LICENSE"
+licenselink = "https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/blob/master/LICENSE"
 description = "A vanilla Bootstrap theme for Hugo"
-homepage = "https://github.com/zwbetz-gh/vanilla-bootstrap"
+homepage = "https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme"
 tags = ["todo"]
 features = ["todo"]
 min_version = "0.48"

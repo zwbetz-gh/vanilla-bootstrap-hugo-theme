@@ -1,29 +1,28 @@
-baseURL: "https://example.com"
-languageCode: "en-us"
-title: "Vanilla Bootstrap"
-theme: "vanilla-bootstrap"
+baseURL: https://example.com
+languageCode: en-us
+title: Vanilla Bootstrap
+theme: vanilla-bootstrap-hugo-theme
 
 taxonomies:
-  tag: "tags"
+  tag: tags
 
-permalinks: 
-  page: "/:filename/"
-  post: "/:filename/"
+permalinks:
+  post: /:filename/
 
 menu:
   main:
-  - name: "Posts"
-    url: "/post/"
+  - name: Posts
+    url: /post/
     weight: 1
-  - name: "Tags"
-    url: "/tags/"
+  - name: Tags
+    url: /tags/
     weight: 2
-  - name: "About"
-    url: "/about/"
+  - name: About
+    url: /about/
     weight: 3
-  - name: "RSS"
-    url: "/index.xml"
+  - name: RSS
+    url: /index.xml
     weight: 4
 
 params:
-  containerMaxWidth: "800px"
+  containerMaxWidth: 800px
