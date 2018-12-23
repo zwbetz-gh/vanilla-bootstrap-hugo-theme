@@ -9,8 +9,7 @@
       </main>
       {{ partial "footer.html" . }}
     </div>
-    {{ if eq .Site.Params.includeBootstrapJs true }}
-      {{ partial "script.html" . }}
-    {{ end }}
+    {{ partial "script.html" . }}
+    {{ partial "google-analytics-async.html" . }}
   </body>
 </html>
