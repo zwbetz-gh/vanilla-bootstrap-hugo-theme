@@ -3,6 +3,6 @@
 {{ with .Params.tags }}
 <br>
 {{ range . }}
-<a class="btn btn-sm btn-outline-secondary tag-btn" href="{{ "/tags/" | absURL }}{{ . | urlize }}">#{{ . }}</a>
+<a class="btn btn-sm btn-outline-secondary tag-btn" href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
 {{ end }}
 {{ end }}
