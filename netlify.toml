@@ -1,6 +1,8 @@
 [build]
   publish = "exampleSite/public"
-  command = """hugo \
+  command = """
+    hugo \
+    --gc \
     --source exampleSite \
     --config exampleSite/config.yaml \
     --themesDir ../.. \
