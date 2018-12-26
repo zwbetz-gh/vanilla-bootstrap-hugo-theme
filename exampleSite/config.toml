@@ -1,0 +1,40 @@
+baseURL = "https://example.com"
+languageCode = "en-us"
+title = "Vanilla"
+# theme = "vanilla-bootstrap-hugo-theme"
+googleAnalytics = "UA-123456789-1"
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  post = "/:filename/"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    url = "/post/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+  [[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 5
+
+[params]
+  includeBootstrapJs = false
+  containerMaxWidth = "700px"
+  dateFormat = "Jan 2, 2006"
+  homeText = "Welcome to the Vanilla theme demo. Have a look around. Maybe even eat some ice cream."
+  footerText = "Made with [Hugo](https://gohugo.io/) and [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)."

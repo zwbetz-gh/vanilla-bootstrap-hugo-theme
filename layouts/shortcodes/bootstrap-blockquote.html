@@ -1,8 +1,6 @@
-{{- $author := .Get "author" -}}
-
 <blockquote class="blockquote">
   <p class="mb-0">{{ .Inner }}</p>
-  {{ with $author }}
+  {{ with (.Get "author") }}
   <footer class="blockquote-footer">{{ . }}</footer>
   {{ end }}
 </blockquote>
