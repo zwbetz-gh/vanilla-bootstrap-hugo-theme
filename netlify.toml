@@ -3,7 +3,9 @@
   command = """hugo \
     --source exampleSite \
     --config exampleSite/config.yaml \
-    --themesDir ../.. 
+    --themesDir ../.. \
+    --theme repo \
+    --baseURL https://vanilla-bootstrap-hugo-theme.netlify.com/
     """
 
 [build.environment]
