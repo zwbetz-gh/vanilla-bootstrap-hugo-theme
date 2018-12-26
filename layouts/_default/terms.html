@@ -9,7 +9,7 @@
   {{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
   <p>
     <a class="btn btn-outline-dark" href="{{ .Permalink }}">
-      {{ $name }} <span class="badge badge-dark">{{ $count }}</span>
+      <span class="badge badge-dark">{{ $count }}</span> {{ $name }}
     </a>
   </p>
   {{ end }}
