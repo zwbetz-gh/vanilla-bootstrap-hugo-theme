@@ -3,7 +3,7 @@
   max-width: {{ .Site.Params.containerMaxWidth | default "700px" | safeCSS }};
 }
 #nav {
-  border-bottom: 1px dashed #212529;
+  border-bottom: 1px solid #212529;
   font-weight: bold;
 }
 #nav a {
@@ -11,11 +11,10 @@
 }
 #main {
   margin-top: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
-#footer {
-  padding: 0.5rem;
-  margin-bottom: 1rem;
+#footer .container {
+  padding: 1em 0;
 }
 #footer a {
   color: inherit;

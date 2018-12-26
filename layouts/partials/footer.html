@@ -1,4 +1,6 @@
-<footer id="footer" class="text-center text-secondary">
-  {{ $defaultFooterText := "TODO set <code>footerText</code> in your config file." }}
-  {{ .Site.Params.footerText | default $defaultFooterText | markdownify }}
+<footer id="footer" class="mt-auto text-center text-secondary">
+  <div class="container">
+    {{ $defaultFooterText := "TODO set <code>footerText</code> in your config file." }}
+    {{ .Site.Params.footerText | default $defaultFooterText | markdownify }}
+  </div>
 </footer>
