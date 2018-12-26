@@ -1,0 +1,10 @@
+[build]
+  publish = "exampleSite/public"
+  command = """hugo \
+    --source exampleSite \
+    --config exampleSite/config.yaml \
+    --themesDir ../.. 
+    """
+
+[build.environment]
+  HUGO_VERSION = "0.53"
