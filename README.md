@@ -2,6 +2,18 @@
 
 A vanilla [Bootstrap](https://getbootstrap.com/) theme for [Hugo](https://gohugo.io/). 
 
+## Table of Contents
+
+* [Demos](#demos)
+* [Minimum Hugo Version](#minimum-hugo-version)
+* [Installation](#installation)
+* [Updating](#updating)
+* [Configuration](#configuration)
+* [Shortcodes](#shortcodes)
+    * [bootstrap-blockquote](#bootstrap-blockquote)
+    * [bootstrap-table](#bootstrap-table)
+* [Getting Help](#getting-help)
+
 ## Demos
 
 | Env | URL |
