@@ -2,7 +2,8 @@
 
 <div class="jumbotron text-center">
   <h1 class="display-4">{{ .Site.Title }}</h1>
-  <p class="lead">{{ .Site.Params.homeText | markdownify }}</p>
+  {{ $defaultHomeText := "TODO set <code>homeText</code> in your config file." }}
+  <p class="lead">{{ .Site.Params.homeText | default $defaultHomeText | markdownify }}</p>
 </div>
 
 {{ end }}
