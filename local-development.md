@@ -8,5 +8,6 @@ hugo server \
 --renderToDisk \
 --source exampleSite \
 --config exampleSite/config.yaml \
---themesDir ../.. 
+--themesDir ../.. \
+--theme vanilla-bootstrap-hugo-theme
 ```
