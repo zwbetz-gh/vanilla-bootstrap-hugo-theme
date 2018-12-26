@@ -1,10 +1,8 @@
-<span class="text-secondary">
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
 {{ .Date.Format $dateFormat }}
 {{ with .Params.tags }}
 <br>
 {{ range . }}
-<a class="text-secondary" href="{{ "/tags/" | absURL }}{{ . | urlize }}">#{{ . }}</a>
+<a class="btn btn-sm btn-outline-secondary" href="{{ "/tags/" | absURL }}{{ . | urlize }}">#{{ . }}</a>
 {{ end }}
 {{ end }}
-</span>
