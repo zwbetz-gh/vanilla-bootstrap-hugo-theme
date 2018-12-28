@@ -92,8 +92,8 @@ If you run into an issue that isn't answered by this documentation, then head ov
 
 In addition to [Bootstrap](https://getbootstrap.com/) and [Hugo](https://gohugo.io/), thank you to:
 
-* [Netlify](https://www.netlify.com/) for deploys
 * [Feather](https://feathericons.com/) for icons
+* [Netlify](https://www.netlify.com/) for deploys
 * [gh-md-toc](https://github.com/ekalinin/github-markdown-toc) for toc generation
 * [vscode](https://code.visualstudio.com/) for text editing
 * [Fedora](https://getfedora.org/) and [VirtualBox](https://www.virtualbox.org/) for development environment

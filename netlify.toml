@@ -1,14 +1,12 @@
 [build]
   publish = "exampleSite/public"
-  command = """
-    hugo \
+  command = """hugo \
     --gc \
     --source exampleSite \
     --config exampleSite/config.yaml \
     --themesDir ../.. \
     --theme repo \
-    --baseURL https://vanilla-bootstrap-hugo-theme.netlify.com/
-    """
+    --baseURL https://vanilla-bootstrap-hugo-theme.netlify.com/"""
 
 [build.environment]
   HUGO_VERSION = "0.52"
