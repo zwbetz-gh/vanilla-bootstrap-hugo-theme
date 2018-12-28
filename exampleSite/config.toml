@@ -18,23 +18,23 @@ googleAnalytics = "UA-123456789-1"
 
 [menu]
   [[menu.main]]
-    name = "Home"
+    name = """<i data-feather="home"></i> Home"""
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "Blog"
+    name = """<i data-feather="edit"></i> Blog"""
     url = "/post/"
     weight = 2
   [[menu.main]]
-    name = "Tags"
+    name = """<i data-feather="tag"></i> Tags"""
     url = "/tags/"
     weight = 3
   [[menu.main]]
-    name = "About"
+    name = """<i data-feather="smile"></i> About"""
     url = "/about/"
     weight = 4
   [[menu.main]]
-    name = "RSS"
+    name = """<i data-feather="rss"></i> RSS"""
     url = "/index.xml"
     weight = 5
 

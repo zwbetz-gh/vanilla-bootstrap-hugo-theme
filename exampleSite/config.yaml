@@ -18,19 +18,19 @@ permalinks:
 
 menu:
   main:
-  - name: Home
+  - name: <i data-feather="home"></i> Home
     url: /
     weight: 1
-  - name: Blog
+  - name: <i data-feather="edit"></i> Blog
     url: /post/
     weight: 2
-  - name: Tags
+  - name: <i data-feather="tag"></i> Tags
     url: /tags/
     weight: 3
-  - name: About
+  - name: <i data-feather="smile"></i> About
     url: /about/
     weight: 4
-  - name: RSS
+  - name: <i data-feather="rss"></i> RSS
     url: /index.xml
     weight: 5
 
