@@ -90,7 +90,7 @@ If you run into an issue that isn't answered by this documentation, then head ov
 
 ## Credits
 
-In addition to [Bootstrap](https://getbootstrap.com/) and [Hugo](https://gohugo.io/), thank you to:
+In addition to Bootstrap and Hugo, thank you to:
 
 * [Feather](https://feathericons.com/) for icons
 * [Netlify](https://www.netlify.com/) for deploys
