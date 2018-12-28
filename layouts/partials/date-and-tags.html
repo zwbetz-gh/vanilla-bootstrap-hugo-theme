@@ -1,8 +1,9 @@
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
-{{ .Date.Format $dateFormat }}
+<i data-feather="calendar"></i> {{ .Date.Format $dateFormat }}
 {{ with .Params.tags }}
-<br>
-{{ range . }}
-<a class="btn btn-sm btn-outline-dark tag-btn" href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
-{{ end }}
+  <br>
+  <i data-feather="tag"></i>
+  {{ range . }}
+  <a class="btn btn-sm btn-outline-dark tag-btn" href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+  {{ end }}
 {{ end }}

@@ -12,7 +12,9 @@ A vanilla [Bootstrap](https://getbootstrap.com/) theme for [Hugo](https://gohugo
 * [Shortcodes](#shortcodes)
     * [bootstrap-blockquote](#bootstrap-blockquote)
     * [bootstrap-table](#bootstrap-table)
+    * [bootstrap-card](#bootstrap-card)
 * [Getting Help](#getting-help)
+* [Credits](#credits)
 
 ## Demos
 
@@ -45,7 +47,7 @@ Copy the `config.toml` or `config.yaml` from the [`exampleSite`](https://github.
 
 ### bootstrap-blockquote
 
-This will format your quotes nicely, using [Bootstrap quote classes](https://getbootstrap.com/docs/4.1/content/typography/#blockquotes). To use it, pass the quote inside the shortcode. The `author` argument is optional. Example usage:
+This will format your quotes nicely, with [Bootstrap blockquotes](https://getbootstrap.com/docs/4.1/content/typography/#blockquotes). To use it, pass the quote inside the shortcode. The `author` argument is optional. Example usage:
 
 ```
 {{% bootstrap-blockquote author="Laura Ingalls" %}}
@@ -55,7 +57,7 @@ I am beginning to learn that it is the sweet, **simple** things of life which ar
 
 ### bootstrap-table
 
-This will add [Bootstrap table classes](https://getbootstrap.com/docs/4.1/content/tables/) to your markdown tables. To use it, pass the markdown table inside the shortcode, then pass the classes. Example usage:
+This will format your tables nicely, with [Bootstrap table classes](https://getbootstrap.com/docs/4.1/content/tables/). Pass the markdown table inside the shortcode, then pass the classes as an argument. Example usage:
 
 ```
 {{< bootstrap-table "table table-dark table-striped table-bordered" >}}
@@ -67,6 +69,31 @@ This will add [Bootstrap table classes](https://getbootstrap.com/docs/4.1/conten
 {{< /bootstrap-table >}}
 ```
 
+### bootstrap-card
+
+This will display your [page bundle](https://gohugo.io/content-management/page-bundles/) images nicely, with [Bootstrap cards](https://getbootstrap.com/docs/4.2/components/card/) and [Hugo image processing](https://gohugo.io/content-management/image-processing/#readout). To `img`, `command`, and `options` arguments are required. All other arguments are optional. Example usage: 
+
+```
+{{< bootstrap-card 
+img="sun.jpg" 
+command="Resize" 
+options="700x" 
+title="The Sun"
+text="The Sun is the star at the center of the Solar System."
+alt="sun" 
+class="mb-3" >}}
+```
+
 ## Getting Help
 
-If you run into an issue that isn't answered by this documentation, then head over to the [Hugo Discussion Forum](https://discourse.gohugo.io/). The folks there are helpful and friendly. **Before** asking your question, be sure to read the [requesting help guidelines](https://discourse.gohugo.io/t/requesting-help/9132). Feel free to tag me in your question, my username there is [`@zwbetz`](https://discourse.gohugo.io/u/zwbetz/summary).
+If you run into an issue that isn't answered by this documentation, then head over to the [Hugo discussion forum](https://discourse.gohugo.io/). The folks there are helpful and friendly. **Before** asking your question, be sure to read the [requesting help guidelines](https://discourse.gohugo.io/t/requesting-help/9132). Feel free to tag me in your question, my username there is [`@zwbetz`](https://discourse.gohugo.io/u/zwbetz/summary).
+
+## Credits
+
+In addition to [Bootstrap](https://getbootstrap.com/) and [Hugo](https://gohugo.io/), thank you to:
+
+* [Netlify](https://www.netlify.com/) for deploys
+* [Feather](https://feathericons.com/) for icons
+* [gh-md-toc](https://github.com/ekalinin/github-markdown-toc) for toc generation
+* [vscode](https://code.visualstudio.com/) for text editing
+* [Fedora](https://getfedora.org/) and [VirtualBox](https://www.virtualbox.org/) for development environment
