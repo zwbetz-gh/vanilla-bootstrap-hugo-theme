@@ -1,0 +1,26 @@
+{{ $original := .Page.Resources.GetMatch (printf "*%s*" (.Get "img")) }}
+{{ $new := "" }}
+
+{{ if eq (.Get "command") "Fit" }}
+  {{ $new = $original.Fit (.Get "options") }}
+{{ else if eq (.Get "command") "Resize" }}
+  {{ $new = $original.Resize (.Get "options") }}
+{{ else if eq (.Get "command") "Fill" }}
+  {{ $new = $original.Fill (.Get "options") }}
+{{ else }}
+  {{ errorf "Invalid image processing command: Must be one of Fit, Fill or Resize." }}
+{{ end }}
+
+<div class="card {{ .Get "class" }}" style="{{ .Get "style" | safeCSS }}">
+  <a href="{{ $original.Permalink }}">
+    <img src="{{ $new.Permalink }}" class="card-img-top" alt="{{ .Get "alt" }}">
+  </a>
+  <div class="card-body">
+  {{ with (.Get "title") }}
+    <h5 class="card-title">{{ . | markdownify }}</h5>
+  {{ end }}
+  {{ with (.Get "text") }}
+    <p class="card-text">{{ . | markdownify }}</p>
+  {{ end }}
+  </div>
+</div>
