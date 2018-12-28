@@ -1,7 +1,4 @@
 <style>
-body {
-  background-color: #fcfcfc;
-}
 .container {
   max-width: {{ .Site.Params.containerMaxWidth | default "700px" | safeCSS }};
 }
@@ -30,10 +27,20 @@ body {
   margin-bottom: 0.3em;
 }
 pre {
-  background-color: #e6ebf1;
-  border: 1px solid #212529;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
   border-radius: 4px;
   padding: 16px;
+}
+pre code {
+  background-color: inherit;
+}
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
 }
 img {
   max-width: 100%;
