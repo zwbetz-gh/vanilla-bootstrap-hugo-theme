@@ -15,12 +15,14 @@
   <a href="{{ $original.Permalink }}">
     <img src="{{ $new.Permalink }}" class="card-img-top" alt="{{ .Get "alt" }}">
   </a>
-  <div class="card-body">
-  {{ with (.Get "title") }}
-    <h5 class="card-title">{{ . | markdownify }}</h5>
+  {{ if or (.Get "title") (.Get "text") }}
+    <div class="card-body">
+    {{ with (.Get "title") }}
+      <h5 class="card-title">{{ . | markdownify }}</h5>
+    {{ end }}
+    {{ with (.Get "text") }}
+      <p class="card-text">{{ . | markdownify }}</p>
+    {{ end }}
+    </div>
   {{ end }}
-  {{ with (.Get "text") }}
-    <p class="card-text">{{ . | markdownify }}</p>
-  {{ end }}
-  </div>
 </div>
