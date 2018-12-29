@@ -1,5 +1,10 @@
 <nav id="nav" class="nav justify-content-center">
+{{ $currentPage := . }}
 {{ range .Site.Menus.main }}
-  <a class="nav-link" href="{{ .URL }}">{{ .Name | safeHTML }}</a>
+  {{ $active := "" }}
+  {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} 
+   {{ $active = "nav-link-active" }}
+  {{ end }}    
+  <a class="nav-link {{ $active }}" href="{{ .URL }}">{{ print .Pre " " .Name | safeHTML }}</a>
 {{ end }}
 </nav>
