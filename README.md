@@ -8,6 +8,7 @@ A vanilla [Bootstrap](https://getbootstrap.com/) theme for [Hugo](https://gohugo
 * [Minimum Hugo Version](#minimum-hugo-version)
 * [Installation](#installation)
 * [Updating](#updating)
+* [Run Against the Example Site Locally](#run-against-the-example-site-locally)
 * [Configuration](#configuration)
 * [Shortcodes](#shortcodes)
     * [bootstrap-blockquote](#bootstrap-blockquote)
@@ -37,6 +38,20 @@ git submodule add https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme.git 
 
 ```
 git submodule update --remote --merge
+```
+
+## Run Against the Example Site Locally
+
+From the root of the theme directory: 
+
+```
+hugo server \
+--gc \
+--renderToDisk \
+--source exampleSite \
+--config exampleSite/config.yaml \
+--themesDir ../.. \
+--theme vanilla-bootstrap-hugo-theme
 ```
 
 ## Configuration
