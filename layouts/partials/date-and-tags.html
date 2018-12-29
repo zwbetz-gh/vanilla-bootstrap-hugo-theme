@@ -1,5 +1,5 @@
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
-<i data-feather="calendar"></i> {{ .Date.Format $dateFormat }}
+<i data-feather="calendar"></i> <time datetime="{{ .PublishDate }}">{{ .PublishDate.Format $dateFormat }}</time>
 {{ with .Params.tags }}
   <br>
   <i data-feather="tag"></i>
