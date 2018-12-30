@@ -3,8 +3,8 @@ license = "MIT"
 licenselink = "https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/blob/master/LICENSE"
 description = "A vanilla Bootstrap theme for Hugo"
 homepage = "https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme"
-tags = ["todo"]
-features = ["todo"]
+tags = ["home", "blog", "tags", "bootstrap", "minimal", "clean", "simple", "feather"]
+features = ["home", "blog", "tags", "bootstrap", "minimal", "clean", "simple", "feather"]
 min_version = "0.48"
 
 [author]
