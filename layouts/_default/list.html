@@ -4,7 +4,7 @@
 
 {{ range .Pages }}
 <p>
-  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  <a class="list-size" href="{{ .RelPermalink }}">{{ .Title }}</a>
   <br>
   {{ partial "date-and-tags.html" . }}
 </p>
