@@ -90,7 +90,7 @@ Uses [Bootstrap tables](https://getbootstrap.com/docs/4.1/content/tables/) to fo
 
 ### bootstrap-card
 
-Uses [Bootstrap cards](https://getbootstrap.com/docs/4.2/components/card/) and [Hugo image processing](https://gohugo.io/content-management/image-processing/#readout) to display your [page bundle](https://gohugo.io/content-management/page-bundles/) images nicely. Only the `img`, `command`, and `options` arguments are required. 
+Uses [Bootstrap cards](https://getbootstrap.com/docs/4.1/components/card/) and [Hugo image processing](https://gohugo.io/content-management/image-processing/#readout) to display your [page bundle](https://gohugo.io/content-management/page-bundles/) images nicely. Only the `img`, `command`, and `options` arguments are required. 
 
 [Here's an actual usage](https://raw.githubusercontent.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/master/exampleSite/content/post/nasa-images/index.md), and here's an example usage: 
 
