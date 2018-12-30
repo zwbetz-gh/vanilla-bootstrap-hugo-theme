@@ -2,9 +2,10 @@
 {{ $currentPage := . }}
 {{ range .Site.Menus.main }}
   {{ $active := "" }}
-  {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} 
+  {{ $menu := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+  {{ if or $menu (eq $currentPage.Title .Name) }} 
    {{ $active = "nav-link-active" }}
   {{ end }}    
-  <a class="nav-link {{ $active }}" href="{{ .URL }}">{{ print .Pre " " .Name | safeHTML }}</a>
+  <a class="nav-link font-125 {{ $active }}" href="{{ .URL }}">{{ print .Pre " " .Name | safeHTML }}</a>
 {{ end }}
 </nav>
