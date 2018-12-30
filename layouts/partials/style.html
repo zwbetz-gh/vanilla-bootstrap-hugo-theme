@@ -2,9 +2,6 @@
 .container {
   max-width: {{ .Site.Params.containerMaxWidth | default "700px" | safeCSS }};
 }
-#nav {
-  border-bottom: 1px solid #212529;
-}
 #nav a {
   font-weight: bold;
   color: inherit;
@@ -12,6 +9,9 @@
 #nav a.nav-link-active {
   background-color: #212529;
   color: #fff;
+}
+#nav-container {
+  border-bottom: 1px solid #212529;
 }
 #main {
   margin-top: 1rem;
