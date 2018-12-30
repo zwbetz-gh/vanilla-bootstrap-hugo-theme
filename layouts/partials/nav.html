@@ -1,14 +1,13 @@
-<nav id="nav" class="nav justify-content-center">
-{{ $currentPage := . }}
-{{ range .Site.Menus.main }}
-  {{ $active := "" }}
-  {{ $menu := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-  {{ if or $menu (eq $currentPage.Title .Name) }} 
-   {{ $active = "nav-link-active" }}
-  {{ end }}    
-  <a class="nav-link font-125 {{ $active }}" href="{{ .URL }}">{{ print .Pre " " .Name | safeHTML }}</a>
-{{ end }}
-</nav>
-<div id="nav-border">
-  <div class="container"></div>
+<div id="nav-border" class="container">
+  <nav id="nav" class="nav justify-content-center">
+  {{ $currentPage := . }}
+  {{ range .Site.Menus.main }}
+    {{ $active := "" }}
+    {{ $menu := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+    {{ if or $menu (eq $currentPage.Title .Name) }} 
+    {{ $active = "nav-link-active" }}
+    {{ end }}    
+    <a class="nav-link font-125 {{ $active }}" href="{{ .URL }}">{{ print .Pre " " .Name | safeHTML }}</a>
+  {{ end }}
+  </nav>
 </div>
