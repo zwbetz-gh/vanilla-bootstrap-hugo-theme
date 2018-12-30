@@ -62,17 +62,21 @@ Copy the `config.toml` or `config.yaml` from the [`exampleSite`](https://github.
 
 ### bootstrap-blockquote
 
-This will format your quotes nicely, with [Bootstrap blockquotes](https://getbootstrap.com/docs/4.1/content/typography/#blockquotes). To use it, pass the quote inside the shortcode. The `author` argument is optional. Example usage:
+Uses [Bootstrap blockquotes](https://getbootstrap.com/docs/4.1/content/typography/#blockquotes) to format your blockquotes nicely. Pass the quote inside the shortcode. The `author` argument is optional. 
+
+[Here's an actual usage](https://raw.githubusercontent.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/master/exampleSite/content/post/quotes-by-carl-jung.md), and here's an example usage:
 
 ```
-{{% bootstrap-blockquote author="Laura Ingalls" %}}
-I am beginning to learn that it is the sweet, **simple** things of life which are the real ones after all.  
+{{% bootstrap-blockquote author="Carl Jung" %}}
+Knowing your own darkness is the best method for dealing with the darknesses of other people.
 {{% /bootstrap-blockquote %}}
 ```
 
 ### bootstrap-table
 
-This will format your tables nicely, with [Bootstrap table classes](https://getbootstrap.com/docs/4.1/content/tables/). Pass the markdown table inside the shortcode, then pass the classes as an argument. Example usage:
+Uses [Bootstrap tables](https://getbootstrap.com/docs/4.1/content/tables/) to format your tables nicely. Pass the markdown table inside the shortcode, then pass the classes as an argument. 
+
+[Here's an actual usage](https://raw.githubusercontent.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/master/exampleSite/content/post/style-a-markdown-table-with-bootstrap-classes-in-hugo.md), and here's an example usage:
 
 ```
 {{< bootstrap-table "table table-dark table-striped table-bordered" >}}
@@ -86,7 +90,9 @@ This will format your tables nicely, with [Bootstrap table classes](https://getb
 
 ### bootstrap-card
 
-This will display your [page bundle](https://gohugo.io/content-management/page-bundles/) images nicely, with [Bootstrap cards](https://getbootstrap.com/docs/4.2/components/card/) and [Hugo image processing](https://gohugo.io/content-management/image-processing/#readout). To `img`, `command`, and `options` arguments are required. All other arguments are optional. Example usage: 
+Uses [Bootstrap cards](https://getbootstrap.com/docs/4.2/components/card/) and [Hugo image processing](https://gohugo.io/content-management/image-processing/#readout) to display your [page bundle](https://gohugo.io/content-management/page-bundles/) images nicely. Only the `img`, `command`, and `options` arguments are required. 
+
+[Here's an actual usage](https://raw.githubusercontent.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/master/exampleSite/content/post/nasa-images/index.md), and here's an example usage: 
 
 ```
 {{< bootstrap-card 
@@ -96,7 +102,8 @@ options="700x"
 title="The Sun"
 text="The Sun is the star at the center of the Solar System."
 alt="sun" 
-class="mb-3" >}}
+class="mb-3" 
+style="" >}}
 ```
 
 ## Getting Help

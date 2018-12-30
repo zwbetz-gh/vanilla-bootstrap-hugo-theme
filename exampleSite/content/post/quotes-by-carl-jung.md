@@ -5,7 +5,7 @@ tags: ["quotes"]
 ---
 
 {{% bootstrap-blockquote author="Carl Jung" %}}
-Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness. It is far better take things as they come along with patience and equanimity.
+Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness. It is far better to take things as they come along with patience and equanimity.
 {{% /bootstrap-blockquote %}}
 
 {{% bootstrap-blockquote author="Carl Jung" %}}
