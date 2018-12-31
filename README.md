@@ -122,4 +122,4 @@ In addition to Bootstrap and Hugo, thank you to:
 * [Netlify](https://www.netlify.com/) for deploys
 * [gh-md-toc](https://github.com/ekalinin/github-markdown-toc) for toc generation
 * [vscode](https://code.visualstudio.com/) for text editing
-* [Fedora](https://getfedora.org/) and [VirtualBox](https://www.virtualbox.org/) for development environment
+* [Fedora](https://getfedora.org/), [Xfce](https://www.xfce.org/), and [VirtualBox](https://www.virtualbox.org/) for development environment
