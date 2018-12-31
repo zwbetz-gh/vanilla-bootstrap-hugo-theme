@@ -8,7 +8,7 @@ A vanilla [Bootstrap](https://getbootstrap.com/) theme for [Hugo](https://gohugo
 * [Minimum Hugo Version](#minimum-hugo-version)
 * [Installation](#installation)
 * [Updating](#updating)
-* [Run Against the Example Site Locally](#run-against-the-example-site-locally)
+* [Run Example Site](#run-example-site)
 * [Configuration](#configuration)
 * [Shortcodes](#shortcodes)
     * [bootstrap-blockquote](#bootstrap-blockquote)
@@ -44,7 +44,7 @@ From the root of your site:
 git submodule update --remote --merge
 ```
 
-## Run Against the Example Site Locally
+## Run Example Site
 
 From the root of `vanilla-bootstrap-hugo-theme`:
 
