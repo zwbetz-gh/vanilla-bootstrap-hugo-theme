@@ -1,22 +1,28 @@
+{{ $command := .Get "command" }}
+{{ $options := .Get "options" }}
+{{ $alt := .Get "alt" }}
+{{ $class := .Get "class" }}
+{{ $style := .Get "style" }}
+
 {{ with .Page.Resources.ByType "image" }}
   {{ range . }}
 
     {{ $original := . }}
     {{ $new := "" }}
 
-    {{ if eq (.Get "command") "Fit" }}
-      {{ $new = $original.Fit (.Get "options") }}
-    {{ else if eq (.Get "command") "Resize" }}
-      {{ $new = $original.Resize (.Get "options") }}
-    {{ else if eq (.Get "command") "Fill" }}
-      {{ $new = $original.Fill (.Get "options") }}
+    {{ if eq $command "Fit" }}
+      {{ $new = $original.Fit $options }}
+    {{ else if eq $command "Resize" }}
+      {{ $new = $original.Resize $options }}
+    {{ else if eq $command "Fill" }}
+      {{ $new = $original.Fill $options }}
     {{ else }}
       {{ errorf "Invalid image processing command: Must be one of Fit, Fill, or Resize." }}
     {{ end }}
 
-    <div class="card {{ .Get "class" }}" style="{{ .Get "style" | safeCSS }}">
+    <div class="card {{ $class }}" style="{{ $style | safeCSS }}">
       <a href="{{ $original.Permalink }}">
-        <img src="{{ $new.Permalink }}" class="card-img-top" alt="{{ .Get "alt" }}">
+        <img src="{{ $new.Permalink }}" class="card-img-top" alt="{{ $alt }}">
       </a>
     </div>
 
