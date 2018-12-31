@@ -1,5 +1,8 @@
+{{ $quote := .Inner }}
+{{ $quote = replace $quote "<p>" "" }}
+{{ $quote = replace $quote "</p>" "" }}
 <blockquote class="blockquote">
-  <p class="mb-0">{{ .Inner }}</p>
+  <p class="mb-0">{{ $quote }}</p>
   {{ with (.Get "author") }}
   <footer class="blockquote-footer">{{ . }}</footer>
   {{ end }}
