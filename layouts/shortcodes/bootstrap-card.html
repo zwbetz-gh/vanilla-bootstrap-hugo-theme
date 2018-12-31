@@ -8,7 +8,7 @@
 {{ else if eq (.Get "command") "Fill" }}
   {{ $new = $original.Fill (.Get "options") }}
 {{ else }}
-  {{ errorf "Invalid image processing command: Must be one of Fit, Fill or Resize." }}
+  {{ errorf "Invalid image processing command: Must be one of Fit, Fill, or Resize." }}
 {{ end }}
 
 <div class="card {{ .Get "class" }}" style="{{ .Get "style" | safeCSS }}">
