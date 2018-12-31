@@ -123,3 +123,4 @@ In addition to Bootstrap and Hugo, thank you to:
 * [gh-md-toc](https://github.com/ekalinin/github-markdown-toc) for toc generation
 * [vscode](https://code.visualstudio.com/) for text editing
 * [Fedora](https://getfedora.org/), [Xfce](https://www.xfce.org/), and [VirtualBox](https://www.virtualbox.org/) for development environment
+* [befunky](https://www.befunky.com/) for screenshot editing
