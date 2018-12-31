@@ -30,11 +30,15 @@ This theme **requires** Hugo version `0.48` or higher. Take a look at the [Hugo 
 
 ## Installation
 
+From the root of your site:
+
 ```
 git submodule add https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme.git themes/vanilla-bootstrap-hugo-theme
 ```
 
 ## Updating
+
+From the root of your site:
 
 ```
 git submodule update --remote --merge
@@ -42,7 +46,7 @@ git submodule update --remote --merge
 
 ## Run Against the Example Site Locally
 
-From the root of the theme directory: 
+From the root of `vanilla-bootstrap-hugo-theme`:
 
 ```
 hugo server \
