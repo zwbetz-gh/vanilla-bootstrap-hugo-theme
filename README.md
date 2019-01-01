@@ -124,3 +124,4 @@ In addition to Bootstrap and Hugo, thank you to:
 * [vscode](https://code.visualstudio.com/) for text editing
 * [Fedora](https://getfedora.org/), [Xfce](https://www.xfce.org/), and [VirtualBox](https://www.virtualbox.org/) for development environment
 * [befunky](https://www.befunky.com/) for screenshot editing
+* [Freepik](https://www.freepik.com/) and [Flaticon](https://www.flaticon.com/) for favicon
