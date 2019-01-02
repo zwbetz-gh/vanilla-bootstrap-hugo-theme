@@ -16,6 +16,7 @@ taxonomies:
 permalinks:
   post: /:filename/
 
+# See https://feathericons.com/ for other icons
 menu:
   main:
   - name: Home

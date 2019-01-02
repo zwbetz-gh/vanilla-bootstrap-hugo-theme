@@ -16,6 +16,7 @@ googleAnalytics = "UA-123456789-1"
 [permalinks]
   post = "/:filename/"
 
+# See https://feathericons.com/ for other icons
 [menu]
   [[menu.main]]
     name = "Home"
