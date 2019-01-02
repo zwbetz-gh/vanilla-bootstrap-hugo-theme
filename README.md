@@ -22,7 +22,7 @@ A vanilla [Bootstrap](https://getbootstrap.com/) theme for [Hugo](https://gohugo
 | Env | URL |
 | --- | --- |
 | Dev demo, immediate updates | https://vanilla-bootstrap-hugo-theme.netlify.com/ |
-| Hugo Themes demo, weekly-ish updates | TODO | 
+| Hugo Themes demo, weekly-ish updates | https://themes.gohugo.io//theme/vanilla-bootstrap-hugo-theme/ | 
 
 ## Minimum Hugo Version
 
