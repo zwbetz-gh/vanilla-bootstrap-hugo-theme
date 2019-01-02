@@ -1,12 +1,15 @@
 <div id="nav-border" class="container">
   <nav id="nav" class="nav justify-content-center">
+  {{ $showActiveNav := .Site.Params.showActiveNav }}
   {{ $currentPage := . }}
   {{ range .Site.Menus.main }}
     {{ $active := "" }}
-    {{ $menu := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-    {{ if or $menu (eq $currentPage.Title .Name) }} 
-    {{ $active = "nav-link-active" }}
-    {{ end }}    
+    {{ if eq $showActiveNav true }}
+      {{ $isMenu := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+      {{ if or $isMenu (eq $currentPage.Title .Name) }} 
+        {{ $active = "nav-link-active" }}
+      {{ end }}  
+    {{ end }}  
     <a class="nav-link {{ $active }}" href="{{ .URL }}">{{ print .Pre " " .Name | safeHTML }}</a>
   {{ end }}
   </nav>
