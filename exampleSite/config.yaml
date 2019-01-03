@@ -16,27 +16,28 @@ taxonomies:
 permalinks:
   post: /:filename/
 
-# See https://feathericons.com/ for other icons
+# See https://feathericons.com/
+# The value of pre is the icon name
 menu:
   main:
   - name: Home
-    pre: <i data-feather="home"></i>
+    pre: home
     url: /
     weight: 1
   - name: Blog
-    pre: <i data-feather="edit"></i>
+    pre: edit
     url: /post/
     weight: 2
   - name: Tags
-    pre: <i data-feather="tag"></i>
+    pre: tag
     url: /tags/
     weight: 3
   - name: About
-    pre: <i data-feather="smile"></i>
+    pre: smile
     url: /about/
     weight: 4
   - name: RSS
-    pre: <i data-feather="rss"></i>
+    pre: rss
     url: /index.xml
     weight: 5
 
