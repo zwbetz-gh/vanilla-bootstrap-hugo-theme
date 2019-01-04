@@ -46,16 +46,10 @@ git submodule update --remote --merge
 
 ## Run Example Site
 
-From the root of `vanilla-bootstrap-hugo-theme`:
+From the root of `themes/vanilla-bootstrap-hugo-theme/exampleSite`:
 
 ```
-hugo server \
---gc \
---renderToDisk \
---source exampleSite \
---config exampleSite/config.yaml \
---themesDir ../.. \
---theme vanilla-bootstrap-hugo-theme
+hugo server --themesDir ../.. -t vanilla-bootstrap-hugo-theme
 ```
 
 ## Configuration
