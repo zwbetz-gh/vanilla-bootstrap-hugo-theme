@@ -49,12 +49,12 @@ git submodule update --remote --merge
 From the root of `themes/vanilla-bootstrap-hugo-theme/exampleSite`:
 
 ```
-hugo server --themesDir ../.. -t vanilla-bootstrap-hugo-theme
+hugo server --themesDir ../..
 ```
 
 ## Configuration
 
-Copy the `config.toml` or `config.yaml` from the [`exampleSite`](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/tree/master/exampleSite), then edit as desired. Make sure to **uncomment** the `theme` line. 
+Copy the `config.toml` or `config.yaml` from the [`exampleSite`](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/tree/master/exampleSite), then edit as desired. 
 
 ## Shortcodes
 
