@@ -1,8 +1,7 @@
 baseURL: https://example.com
 languageCode: en-us
 title: Vanilla
-# Uncomment below to enable theme
-# theme: vanilla-bootstrap-hugo-theme
+theme: vanilla-bootstrap-hugo-theme
 googleAnalytics: UA-123456789-1
 
 # Uncomment below to enable syntax highlighting
