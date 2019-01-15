@@ -3,7 +3,7 @@
   feather.replace()
 </script>
 
-{{ if eq .Site.Params.includeBootstrapJs true }}
+{{ if eq site.Params.includeBootstrapJs true }}
 <script src="{{ "js/jquery-3.3.1.slim.min.js" | absURL }}"></script>
 <script src="{{ "js/bootstrap.bundle.min.js" | absURL }}"></script>
 {{ end }}
