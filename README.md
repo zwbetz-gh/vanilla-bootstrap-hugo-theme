@@ -26,7 +26,7 @@ A vanilla [Bootstrap](https://getbootstrap.com/) theme for [Hugo](https://gohugo
 
 ## Minimum Hugo Version
 
-This theme **requires** Hugo version `0.53` or higher. Take a look at the [Hugo releases](https://github.com/gohugoio/hugo/releases) and download the binary for your OS.
+This theme **requires** Hugo version `0.48` or higher. Take a look at the [Hugo releases](https://github.com/gohugoio/hugo/releases) and download the binary for your OS.
 
 ## Installation
 

@@ -1,6 +1,6 @@
 <style>
 .container {
-  max-width: {{ site.Params.containerMaxWidth | default "700px" | safeCSS }};
+  max-width: {{ .Site.Params.containerMaxWidth | default "700px" | safeCSS }};
 }
 #nav a {
   font-weight: bold;

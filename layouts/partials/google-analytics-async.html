@@ -1,5 +1,5 @@
-{{ if not site.IsServer }}
-  {{ with site.GoogleAnalytics }}
+{{ if not .Site.IsServer }}
+  {{ with .Site.GoogleAnalytics }}
   <script>
   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
   ga('create', '{{ . }}', 'auto');

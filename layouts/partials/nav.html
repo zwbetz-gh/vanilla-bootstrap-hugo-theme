@@ -1,8 +1,8 @@
 <div id="nav-border" class="container">
   <nav id="nav" class="nav justify-content-center">
-  {{ $showActiveNav := site.Params.showActiveNav }}
+  {{ $showActiveNav := .Site.Params.showActiveNav }}
   {{ $currentPage := . }}
-  {{ range site.Menus.main }}
+  {{ range .Site.Menus.main }}
     {{ $active := "" }}
     {{ if eq $showActiveNav true }}
       {{ $isMenu := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
