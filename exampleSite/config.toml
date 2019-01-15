@@ -7,6 +7,7 @@ googleAnalytics = "UA-123456789-1"
 # Uncomment below to enable syntax highlighting
 # pygmentsCodefences = true
 # pygmentsCodefencesGuessSyntax = true
+# See https://xyproto.github.io/splash/docs/all.html for more styles
 # pygmentsStyle = "pygments"
 
 [taxonomies]
