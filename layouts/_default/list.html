@@ -4,7 +4,7 @@
 
 {{ range .Pages.ByPublishDate.Reverse }}
 <p>
-  <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
+  <a class="font-125" href="{{ .Permalink }}">{{ .Title }}</a>
   <br>
   {{ partial "date-and-tags.html" . }}
 </p>
