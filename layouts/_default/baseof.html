@@ -1,5 +1,5 @@
 <!doctype html>
-{{ $lang := site.Language.Lang | default "en" }}
+{{ $lang := .Site.Language.Lang | default "en" }}
 <html lang="{{ $lang }}" class="h-100">
   {{ partial "head.html" . }}
   <body class="d-flex flex-column h-100">
