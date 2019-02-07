@@ -19,27 +19,27 @@ googleAnalytics = "UA-123456789-1"
 # See https://feathericons.com/
 # The value of pre is the icon name
 [menu]
-  [[menu.main]]
+  [[menu.nav]]
     name = "Home"
     pre = "home"
     url = "/"
     weight = 1
-  [[menu.main]]
+  [[menu.nav]]
     name = "Blog"
     pre = "edit"
     url = "/post/"
     weight = 2
-  [[menu.main]]
+  [[menu.nav]]
     name = "Tags"
     pre = "tag"
     url = "/tags/"
     weight = 3
-  [[menu.main]]
+  [[menu.nav]]
     name = "About"
     pre = "smile"
     url = "/about/"
     weight = 4
-  [[menu.main]]
+  [[menu.nav]]
     name = "RSS"
     pre = "rss"
     url = "/index.xml"

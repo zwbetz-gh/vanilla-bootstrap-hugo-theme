@@ -2,10 +2,10 @@
   <nav id="nav" class="nav justify-content-center">
   {{ $showActiveNav := .Site.Params.showActiveNav }}
   {{ $currentPage := . }}
-  {{ range .Site.Menus.main }}
+  {{ range .Site.Menus.nav }}
     {{ $active := "" }}
     {{ if eq $showActiveNav true }}
-      {{ $isMenu := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+      {{ $isMenu := or ($currentPage.IsMenuCurrent "nav" .) ($currentPage.HasMenuCurrent "nav" .) }}
       {{ if or $isMenu (eq $currentPage.Title .Name) }} 
         {{ $active = "nav-link-active" }}
       {{ end }}  

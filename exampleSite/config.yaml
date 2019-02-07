@@ -19,7 +19,7 @@ permalinks:
 # See https://feathericons.com/
 # The value of pre is the icon name
 menu:
-  main:
+  nav:
   - name: Home
     pre: home
     url: /
