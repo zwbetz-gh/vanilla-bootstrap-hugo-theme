@@ -6,7 +6,10 @@
     {{ $active := "" }}
     {{ if eq $showActiveNav true }}
       {{ $isMenu := or ($currentPage.IsMenuCurrent "nav" .) ($currentPage.HasMenuCurrent "nav" .) }}
-      {{ if or $isMenu (eq $currentPage.Title .Name) }} 
+      {{ $isMenu = or $isMenu (eq $currentPage.Title .Name) }}
+      {{ $isMenu = or $isMenu (and (eq .Name "Blog") (eq $currentPage.Section "post")) }}
+      {{ $isMenu = or $isMenu (and (eq .Name "Tags") (eq $currentPage.Section "tags")) }}
+      {{ if $isMenu }} 
         {{ $active = "nav-link-active" }}
       {{ end }}  
     {{ end }}  
