@@ -1,8 +1,18 @@
 {{ define "main" }}
 
+{{ range .Data.Pages }}
+    {{if eq .Type "homepage" }}
+        {{.HomepageMarkdownContent}}
+    {{end}}
+{{ end }}
+
 <div id="home-jumbotron" class="jumbotron text-center">
   <h1>{{ .Site.Title }}</h1>
-  <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
+  {{if isset .HomepageMarkdownContent}}
+    <p class="font-125">{{ .HomepageMarkdownContent | markdownify }}</p>
+  {{else}}
+    <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
+  {{end}}
 </div>
 
 {{ end }}
