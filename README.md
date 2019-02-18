@@ -6,12 +6,13 @@ A vanilla [Bootstrap](https://getbootstrap.com/) theme for [Hugo](https://gohugo
 
 ## Table of Contents
 
-* [Demos](#demos)
+* [Demo](#demo)
 * [Minimum Hugo Version](#minimum-hugo-version)
 * [Installation](#installation)
 * [Updating](#updating)
 * [Run Example Site](#run-example-site)
 * [Configuration](#configuration)
+* [Homepage Content](#homepage-content)
 * [Shortcodes](#shortcodes)
     * [bootstrap-blockquote](#bootstrap-blockquote)
     * [bootstrap-table](#bootstrap-table)
@@ -19,16 +20,13 @@ A vanilla [Bootstrap](https://getbootstrap.com/) theme for [Hugo](https://gohugo
 * [Getting Help](#getting-help)
 * [Credits](#credits)
 
-## Demos
+## Demo
 
-| Env | URL |
-| --- | --- |
-| Dev demo, immediate updates | https://vanilla-bootstrap-hugo-theme.netlify.com/ |
-| Hugo Themes demo, weekly-ish updates | https://themes.gohugo.io//theme/vanilla-bootstrap-hugo-theme/ | 
+https://vanilla-bootstrap-hugo-theme.netlify.com/ 
 
 ## Minimum Hugo Version
 
-This theme **requires** Hugo version `0.48` or higher. Take a look at the [Hugo releases](https://github.com/gohugoio/hugo/releases) and download the binary for your OS.
+Hugo version `0.48` or higher is required. View the [Hugo releases](https://github.com/gohugoio/hugo/releases) and download the binary for your OS.
 
 ## Installation
 
@@ -57,6 +55,18 @@ hugo server --themesDir ../..
 ## Configuration
 
 Copy the `config.toml` or `config.yaml` from the [`exampleSite`](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/tree/master/exampleSite), then edit as desired. 
+
+## Homepage Content
+
+By default the homepage uses the `homeText` param for content. If you wish to provide content from a file, then create `content/_index.md` and it will be used instead. For example:
+
+```
+---
+title: Home
+---
+
+Homepage content goes here. 
+```
 
 ## Shortcodes
 
