@@ -7,24 +7,24 @@ A vanilla [Bootstrap](https://getbootstrap.com/) theme for [Hugo](https://gohugo
 ## Table of Contents
 
 * [Demo](#demo)
-* [Minimum Hugo Version](#minimum-hugo-version)
+* [Minimum Hugo version](#minimum-hugo-version)
 * [Installation](#installation)
 * [Updating](#updating)
-* [Run Example Site](#run-example-site)
+* [Run example site](#run-example-site)
 * [Configuration](#configuration)
-* [Homepage Content](#homepage-content)
+* [Homepage content](#homepage-content)
 * [Shortcodes](#shortcodes)
     * [bootstrap-blockquote](#bootstrap-blockquote)
     * [bootstrap-table](#bootstrap-table)
     * [bootstrap-card](#bootstrap-card)
-* [Getting Help](#getting-help)
+* [Getting help](#getting-help)
 * [Credits](#credits)
 
 ## Demo
 
 https://vanilla-bootstrap-hugo-theme.netlify.com/ 
 
-## Minimum Hugo Version
+## Minimum Hugo version
 
 Hugo version `0.48` or higher is required. View the [Hugo releases](https://github.com/gohugoio/hugo/releases) and download the binary for your OS.
 
@@ -44,7 +44,7 @@ From the root of your site:
 git submodule update --remote --merge
 ```
 
-## Run Example Site
+## Run example site
 
 From the root of `themes/vanilla-bootstrap-hugo-theme/exampleSite`:
 
@@ -56,7 +56,7 @@ hugo server --themesDir ../..
 
 Copy the `config.toml` or `config.yaml` from the [`exampleSite`](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/tree/master/exampleSite), then edit as desired. 
 
-## Homepage Content
+## Homepage content
 
 By default the homepage uses the `homeText` param for content. If you wish to provide content from a file, then create `content/_index.md` and it will be used instead. For example:
 
@@ -116,9 +116,9 @@ class="mb-3"
 style="" >}}
 ```
 
-## Getting Help
+## Getting help
 
-If you run into an issue that isn't answered by this documentation or the [`exampleSite`](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/tree/master/exampleSite), then head over to the [Hugo discussion forum](https://discourse.gohugo.io/). The folks there are helpful and friendly. **Before** asking your question, be sure to read the [requesting help guidelines](https://discourse.gohugo.io/t/requesting-help/9132). Feel free to tag me in your question, my username there is [`@zwbetz`](https://discourse.gohugo.io/u/zwbetz/summary).
+If you run into an issue that isn't answered by this documentation or the [`exampleSite`](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/tree/master/exampleSite), then visit the [Hugo forum](https://discourse.gohugo.io/). The folks there are helpful and friendly. **Before** asking your question, be sure to read the [requesting help guidelines](https://discourse.gohugo.io/t/requesting-help/9132). Feel free to tag me in your question, my forum username is [@zwbetz](https://discourse.gohugo.io/u/zwbetz/summary).
 
 ## Credits
 
