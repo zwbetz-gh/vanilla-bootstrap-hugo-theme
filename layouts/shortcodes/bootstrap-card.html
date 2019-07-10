@@ -23,6 +23,9 @@
     {{ with (.Get "text") }}
       <p class="card-text">{{ . | markdownify }}</p>
     {{ end }}
+    {{ if (and (isset .Params "link-text") (isset .Params "link-ref")) }}
+      <a href="{{ .Get "link-ref" }}" class="card-link">{{ .Get "link-text" }}</a>
+    {{ end }}
     </div>
   {{ end }}
 </div>
