@@ -2,6 +2,7 @@ baseURL = "https://example.com"
 languageCode = "en-us"
 title = "Vanilla"
 theme = "vanilla-bootstrap-hugo-theme"
+themesDir = "../.."
 googleAnalytics = "UA-123456789-1"
 
 # Uncomment below to enable syntax highlighting
