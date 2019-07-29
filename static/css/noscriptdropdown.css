@@ -1,0 +1,9 @@
+.dropdown-menu {
+  /* this removes a small gap during which the hover is lost and the menu is closed
+     when moving the cursor to the dropdown list content */
+  margin-top: 0px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

@@ -1,6 +1,7 @@
 <div id="nav-border" class="container">
   <nav id="nav" class="nav justify-content-center">
   {{ $showActiveNav := .Site.Params.showActiveNav }}
+  {{ $noScriptDropdown := .Site.Params.noscriptDropdown }}
   {{ $currentPage := . }}
   {{ range .Site.Menus.nav }}
     {{ if .HasChildren }}
@@ -28,7 +29,11 @@
         {{ $active = "nav-link-active" }}
       {{ end }}
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle {{ $active }}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{ if $noScriptDropdown }}
+          <a class="nav-link dropdown-toggle {{ $active }}" aria-haspopup="true">
+        {{ else }}
+          <a class="nav-link dropdown-toggle {{ $active }}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{ end }}
           {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre }}
           {{ $text := print $icon " " .Name | safeHTML }}
           {{ $text }}

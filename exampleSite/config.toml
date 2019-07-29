@@ -49,7 +49,8 @@ googleAnalytics = "UA-123456789-1"
     weight = 5
 
 [params]
-  includeBootstrapJs = true
+  includeBootstrapJs = false
+  noscriptDropdown = true
   showActiveNav = true
   containerMaxWidth = "700px"
   dateFormat = "Jan 2, 2006"
