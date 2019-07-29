@@ -24,21 +24,23 @@ googleAnalytics = "UA-123456789-1"
     pre = "home"
     url = "/"
     weight = 1
+    identifier = "homemenu"
   [[menu.nav]]
     name = "Blog"
     pre = "edit"
     url = "/post/"
     weight = 2
+    identifier = "blogmenu"
   [[menu.nav]]
     name = "Tags"
     pre = "tag"
     url = "/tags/"
-    weight = 3
+    parent = "blogmenu"
   [[menu.nav]]
     name = "About"
     pre = "smile"
     url = "/about/"
-    weight = 4
+    parent = "homemenu"
   [[menu.nav]]
     name = "RSS"
     pre = "rss"
@@ -46,7 +48,7 @@ googleAnalytics = "UA-123456789-1"
     weight = 5
 
 [params]
-  includeBootstrapJs = false
+  includeBootstrapJs = true
   showActiveNav = true
   containerMaxWidth = "700px"
   dateFormat = "Jan 2, 2006"

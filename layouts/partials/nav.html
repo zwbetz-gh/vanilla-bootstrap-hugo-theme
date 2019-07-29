@@ -3,19 +3,76 @@
   {{ $showActiveNav := .Site.Params.showActiveNav }}
   {{ $currentPage := . }}
   {{ range .Site.Menus.nav }}
-    {{ $active := "" }}
-    {{ if eq $showActiveNav true }}
-      {{ $isMenu := or ($currentPage.IsMenuCurrent "nav" .) ($currentPage.HasMenuCurrent "nav" .) }}
-      {{ $isMenu = or $isMenu (eq $currentPage.Title .Name) }}
-      {{ $isMenu = or $isMenu (and (eq .Name "Blog") (eq $currentPage.Section "post")) }}
-      {{ $isMenu = or $isMenu (and (eq .Name "Tags") (eq $currentPage.Section "tags")) }}
-      {{ if $isMenu }} 
+    {{ if .HasChildren }}
+      {{ $isParentItselfSelected := false }}
+      {{ $isAnyChildSelected := false }}
+      {{ if eq $showActiveNav true }}
+        {{ $isParentItselfSelected = $currentPage.IsMenuCurrent "nav" . }}
+        {{ $isParentItselfSelected = or $isParentItselfSelected (eq $currentPage.Title .Name) }}
+        {{ $isParentItselfSelected = or $isParentItselfSelected (and (eq .Name "Blog") (eq $currentPage.Section "post")) }}
+        {{ $isParentItselfSelected = or $isParentItselfSelected (and (eq .Name "Tags") (eq $currentPage.Section "tags")) }}
+      {{ end }}
+      {{ range .Children }}
+        {{ if eq $showActiveNav true }}
+          {{ $isMenu := or ($currentPage.IsMenuCurrent "nav" .) ($currentPage.HasMenuCurrent "nav" .) }}
+          {{ $isMenu = or $isMenu (eq $currentPage.Title .Name) }}
+          {{ $isMenu = or $isMenu (and (eq .Name "Blog") (eq $currentPage.Section "post")) }}
+          {{ $isMenu = or $isMenu (and (eq .Name "Tags") (eq $currentPage.Section "tags")) }}
+          {{ if $isMenu }}
+            {{ $isAnyChildSelected = true }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ $active := "" }}
+      {{ if or $isParentItselfSelected $isAnyChildSelected }}
         {{ $active = "nav-link-active" }}
-      {{ end }}  
-    {{ end }}  
-    {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre }}
-    {{ $text := print $icon " " .Name | safeHTML }}
-    <a class="nav-link {{ $active }}" href="{{ .URL }}">{{ $text }}</a>
+      {{ end }}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle {{ $active }}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre }}
+          {{ $text := print $icon " " .Name | safeHTML }}
+          {{ $text }}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          {{ $active := "" }}
+          {{ if $isParentItselfSelected }}
+            {{ $active = "nav-link-active" }}
+          {{ end }}
+          {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre }}
+          {{ $text := print $icon " " .Name | safeHTML }}
+          <a class="dropdown-item {{ $active }}" href="{{ .URL }}">{{ $text }}</a>
+          {{ range .Children }}
+            {{ $active := "" }}
+            {{ if eq $showActiveNav true }}
+              {{ $isMenu := or ($currentPage.IsMenuCurrent "nav" .) ($currentPage.HasMenuCurrent "nav" .) }}
+              {{ $isMenu = or $isMenu (eq $currentPage.Title .Name) }}
+              {{ $isMenu = or $isMenu (and (eq .Name "Blog") (eq $currentPage.Section "post")) }}
+              {{ $isMenu = or $isMenu (and (eq .Name "Tags") (eq $currentPage.Section "tags")) }}
+              {{ if $isMenu }}
+                {{ $active = "nav-link-active" }}
+              {{ end }}
+            {{ end }}
+            {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre }}
+            {{ $text := print $icon " " .Name | safeHTML }}
+            <a class="dropdown-item {{ $active }}" href="{{ .URL }}">{{ $text }}</a>
+          {{ end }}
+        </div>
+      </li>
+    {{ else }}
+      {{ $active := "" }}
+      {{ if eq $showActiveNav true }}
+        {{ $isMenu := or ($currentPage.IsMenuCurrent "nav" .) ($currentPage.HasMenuCurrent "nav" .) }}
+        {{ $isMenu = or $isMenu (eq $currentPage.Title .Name) }}
+        {{ $isMenu = or $isMenu (and (eq .Name "Blog") (eq $currentPage.Section "post")) }}
+        {{ $isMenu = or $isMenu (and (eq .Name "Tags") (eq $currentPage.Section "tags")) }}
+        {{ if $isMenu }}
+          {{ $active = "nav-link-active" }}
+        {{ end }}
+      {{ end }}
+      {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre }}
+      {{ $text := print $icon " " .Name | safeHTML }}
+      <a class="nav-link {{ $active }}" href="{{ .URL }}">{{ $text }}</a>
+    {{ end }}
   {{ end }}
   </nav>
 </div>

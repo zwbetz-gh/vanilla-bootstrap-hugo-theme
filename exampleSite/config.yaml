@@ -24,25 +24,27 @@ menu:
     pre: home
     url: /
     weight: 1
+    identifier: homemenu
   - name: Blog
     pre: edit
     url: /post/
     weight: 2
+    identifier: blogmenu
   - name: Tags
     pre: tag
     url: /tags/
-    weight: 3
+    parent: blogmenu
   - name: About
     pre: smile
     url: /about/
-    weight: 4
+    parent: homemenu
   - name: RSS
     pre: rss
     url: /index.xml
     weight: 5
 
 params:
-  includeBootstrapJs: false
+  includeBootstrapJs: true
   showActiveNav: true
   containerMaxWidth: 700px
   dateFormat: Jan 2, 2006
