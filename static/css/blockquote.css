@@ -1,0 +1,46 @@
+blockquote {
+    position: relative;
+    text-align: left;
+    padding: 0.5em 0 0.5em 0.5em;
+    border: none;
+    margin: 10px auto 10px;
+    width:100%;
+    display: block;
+}
+
+blockquote:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    color: 	#808080;
+    top: 0;
+    background: -moz-linear-gradient(top, 0%,#808080 60%,rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(top,#808080 0%,#808080 60%,rgba(255,255,255,0) 100%);
+    /* background: linear-gradient(to bottom,#808080 0%,#808080 60%,rgba(255,255,255,0) 100%); */
+}
+
+blockquote:before {
+    content:"❝";
+    font-size: 14px;
+    display: block;
+    margin-bottom: 0em;
+    font-weight: 400;
+    color: 	#808080;
+}
+
+blockquote > cite, 
+blockquote > p > cite {
+    display: block;
+    font-size: 16px;
+    line-height: 1.3em;
+    font-weight: lighter;
+    font-style: normal;
+    margin-top: 1.1em;
+    letter-spacing: 0;
+    font-style:italic;
+}
+
+
