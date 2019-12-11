@@ -26,7 +26,7 @@ https://vanilla-bootstrap-hugo-theme.netlify.com/
 
 ## Minimum Hugo version
 
-Hugo version `0.58.3` or higher is required. View the [Hugo releases](https://github.com/gohugoio/hugo/releases) and download the binary for your OS.
+Hugo version `0.60.1` or higher is required. View the [Hugo releases](https://github.com/gohugoio/hugo/releases) and download the binary for your OS.
 
 ## Installation
 
@@ -54,7 +54,7 @@ hugo server --themesDir ../..
 
 ## Configuration
 
-Copy the `config.toml` or `config.yaml` from the [`exampleSite`](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/tree/master/exampleSite), then edit as desired. 
+Copy `config.yaml` from the [`exampleSite`](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/tree/master/exampleSite), then edit as desired. 
 
 ## Homepage content
 
@@ -77,9 +77,9 @@ Uses [Bootstrap blockquotes](https://getbootstrap.com/docs/4.3/content/typograph
 [Here's an actual usage](https://raw.githubusercontent.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/master/exampleSite/content/post/quotes-by-carl-jung.md), and here's an example usage:
 
 ```
-{{% bootstrap-blockquote author="Carl Jung" %}}
+{{< bootstrap-blockquote author="Carl Jung" >}}
 Knowing your own darkness is the best method for dealing with the darknesses of other people.
-{{% /bootstrap-blockquote %}}
+{{< /bootstrap-blockquote >}}
 ```
 
 ### bootstrap-table
