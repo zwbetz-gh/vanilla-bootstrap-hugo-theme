@@ -26,7 +26,11 @@ https://vanilla-bootstrap-hugo-theme.netlify.com/
 
 ## Minimum Hugo version
 
-Hugo version `0.60.1` or higher is required. View the [Hugo releases](https://github.com/gohugoio/hugo/releases) and download the binary for your OS.
+The **extended** variant of Hugo version `0.60.1` or higher is required. View the [Hugo releases](https://github.com/gohugoio/hugo/releases) and download the binary for your OS. To ensure you have the extended version installed, you can run the following command and expect a non-empty return:
+
+```
+hugo version | grep extended
+```
 
 ## Installation
 
