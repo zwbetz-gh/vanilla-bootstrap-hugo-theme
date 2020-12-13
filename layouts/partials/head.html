@@ -3,6 +3,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   {{ hugo.Generator }}
   <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | absURL }}">
+  {{ $customStyle := resources.Get .Site.Params.customCss }}
+  <link rel="stylesheet" href="{{ $customStyle.RelPermalink | absURL }}">
+
   {{ $title := print .Title " | " .Site.Title }}
   {{ if .IsHome }}
     {{ $title = .Site.Title }}
