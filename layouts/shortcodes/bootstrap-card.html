@@ -1,3 +1,6 @@
+{{/* see https://themes.gohugo.io/vanilla-bootstrap-hugo-theme/#bootstrap-card for use info */}}
+{{/* Better yet, rewrite this shortcode to behave as documented in https://getbootstrap.com/docs/4.0/components/card/ */}}
+
 {{ $original := .Page.Resources.GetMatch (printf "*%s*" (.Get "img")) }}
 {{ $new := "" }}
 
