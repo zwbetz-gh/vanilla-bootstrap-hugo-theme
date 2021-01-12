@@ -10,6 +10,7 @@
   {{ if .IsHome }}
     {{ $title = .Site.Title }}
   {{ end }}
+  {{ partial "seo_schema" . }}
   <title>{{ $title }}</title>
   {{ partial "style.html" . }}
 </head>
