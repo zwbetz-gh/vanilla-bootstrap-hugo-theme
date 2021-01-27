@@ -1,0 +1,41 @@
+<!-- render_from_Dropbox.html
+
+Dropbox token =
+accessToken: 'sl.ApnFtgerIKVvOjuiXOYmmrXnVAlj4wLQRtVfYbZ7Id47O7aJ3pW8ApHA-04JG5HQcfeihJbMZtFzuk_aHhNxVSGpH01wb_1hSt0X9fAzj1D5f-w3KYZ8bvODaTWMyCQsOAdFSVA' -->
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+
+<!-- from https://stackoverflow.com/a/46803758 -->
+<script type="text/javascript">
+
+  function convertShowdown(md) {
+    var converter = new showdown.Converter();
+    var html = converter.makeHtml(md);
+    document.getElementById("dropbox-tile").innerHTML = html;
+  }
+
+  function readTextFile(url) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", url, false);
+    rawFile.onreadystatechange = function () {
+      if(rawFile.readyState === 4) {
+        if(rawFile.status === 200 || rawFile.status == 0) {
+          var allText = rawFile.responseText;
+          // alert(allText);
+          // document.write(allText);
+          // per https://www.w3schools.com/js/js_output.asp
+          // document.getElementById("demo").innerHTML = allText;
+          convertShowdown(allText);
+        }
+      }
+    }
+    rawFile.send(null);
+  }
+</script>
+
+
+{{ if .Site.Params.dropboxURL }}
+  <!-- per https://www.w3schools.com/js/js_output.asp -->
+  <div id="dropbox-tile" class="from-dbox"></div>
+  <script>readTextFile( {{ .Site.Params.dropboxURL }} );</script>
+{{ end }}

@@ -131,3 +131,54 @@ In addition to Bootstrap and Hugo, thank you to:
 * [Fedora](https://getfedora.org/), [Xfce](https://www.xfce.org/), and [VirtualBox](https://www.virtualbox.org/) for development environment
 * [befunky](https://www.befunky.com/) for screenshot editing
 * [Freepik](https://www.freepik.com/) and [Flaticon](https://www.flaticon.com/) for favicon
+
+# Customizations
+
+## `render_from-Dropbox` Partial
+
+The three key parts used to render a file from Dropbox into a Hugo site page, located in: `layouts/partials/render_from_Dropbox.html`, `config.toml`, and `layouts/index.html`.
+
+The source code is all housed in the `render_from_Dropbox.html` partial. Within the source code is a `readTextFile` function that requires a URL as a parameter. That URL must be set in `config.toml` as `.Site.Params.dropboxURL`, and should link to the actual _DropBox_ file being referenced. 
+
+### The `dropboxURL` Site Parameter
+
+**Important!** The URL provided in `.Site.Params.dropboxURL` should specify a domain of `dl.dropboxusercontent.com` rather than the standard `www.dropbox.com` that normally appears in a file's share link.  Files served from `dl.dropboxusercontent.com` can be read and rendered without requiring special app authentication. The following example demonstrates the required substitution.
+
+```
+[params]
+   dropboxURL = "https://dl.dropboxusercontent.com/s/6bfw16wyq8zn8vc/javascript-test.md?dl=0"
+```
+
+### Calling the Function
+
+The call to read and render the _Markdown_ (.md) file named in `.Site.Params.dropboxURL` wraps the `readTextFile` function in an `if` statement, in case there has been no _Dropbox_ URL set in `config.toml`.  An example call, taken from [SummittDweller's blog](https://blog.summittdweller.com/) looks like this in `layouts/index.html`:
+
+```
+{{ partial "render_from_Dropbox.html" . }}
+```
+
+### Markdown File Changes
+
+The content of the shared file in _Dropbox_ can be edited and updated or changed completely by uploading a file by the same name as an existing  _Dropbox_ file. The updated, or new, file will have the same share URL as long as the filename is not changed.  
+
+### Showdown
+
+The `render_from_Dropbox` partial uses the [Showdown javascript library](http://showdownjs.com/) to render the file's _Markdown_ content. An example of a rendered _Markdown_ file from [SummittDweller's blog](https://blog.summittdweller.com/) looks like this:
+
+![Sample of Rendered Markdown](https://images.summittdweller.com/blogs-SummittDweller/rendered-from-dropbox.png)
+
+### CSS Control
+
+The rendered _Markdown_ content can be formatted using a CSS `div.from-dbox` selector and a snippet like the following:
+
+```
+div.from-dbox {
+  display: block
+  background: whitesmoke;
+  border: 5px solid red;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+  margin-top: 5px;
+}
+```
