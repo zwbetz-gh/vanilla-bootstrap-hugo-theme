@@ -1,6 +1,6 @@
 ---
 title: Home
-draft: true
+draft: false
 ---
 
 Homepage content goes here. 
