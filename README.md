@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c8f8a93c-33b9-48bc-b4d8-500c79b1b0ae/deploy-status)](https://app.netlify.com/sites/vanilla-bootstrap-hugo-theme/deploys)
 
-A vanilla [Bootstrap](https://getbootstrap.com/) theme for [Hugo](https://gohugo.io/). 
+A vanilla [Bootstrap](https://getbootstrap.com/) theme for [Hugo](https://gohugo.io/).
 
 ## Table of Contents
 
@@ -22,7 +22,7 @@ A vanilla [Bootstrap](https://getbootstrap.com/) theme for [Hugo](https://gohugo
 
 ## Demo
 
-https://vanilla-bootstrap-hugo-theme.netlify.com/ 
+https://vanilla-bootstrap-hugo-theme.netlify.com/
 
 ## Minimum Hugo version
 
@@ -54,18 +54,20 @@ hugo server --themesDir ../..
 
 ## Configuration
 
-Copy `config.yaml` from the [`exampleSite`](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/tree/master/exampleSite), then edit as desired. 
+Copy `config.yaml` from the [`exampleSite`](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/tree/master/exampleSite), then edit as desired.
 
 ## Homepage content
 
-By default the homepage uses the `homeText` param for content. If you wish to provide content from a file, then create `content/_index.md` and it will be used instead. For example:
+By default, the homepage uses the config file's `homeText` param for content.
+
+If you wish to provide content from a file, then create `content/_index.md` and it will be used instead. For example:
 
 ```
 ---
 title: Home
 ---
 
-Homepage content goes here. 
+Homepage content goes here.
 ```
 
 ## Shortcodes
@@ -102,17 +104,17 @@ Uses [Bootstrap tables](https://getbootstrap.com/docs/4.3/content/tables/) to fo
 
 Uses [Bootstrap cards](https://getbootstrap.com/docs/4.3/components/card/) and [Hugo image processing](https://gohugo.io/content-management/image-processing/#readout) to display your [page bundle](https://gohugo.io/content-management/page-bundles/) images nicely. Only the `img`, `command`, and `options` arguments are required.
 
-[Here's an actual usage](https://raw.githubusercontent.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/master/exampleSite/content/post/nasa-images/index.md), and here's an example usage: 
+[Here's an actual usage](https://raw.githubusercontent.com/zwbetz-gh/vanilla-bootstrap-hugo-theme/master/exampleSite/content/post/nasa-images/index.md), and here's an example usage:
 
 ```
-{{< bootstrap-card 
-img="sun.jpg" 
-command="Resize" 
-options="700x" 
+{{< bootstrap-card
+img="sun.jpg"
+command="Resize"
+options="700x"
 title="The Sun"
 text="The Sun is the star at the center of the Solar System."
-alt="sun" 
-class="mb-3" 
+alt="sun"
+class="mb-3"
 style="" >}}
 ```
 
