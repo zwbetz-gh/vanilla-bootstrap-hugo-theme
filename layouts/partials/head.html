@@ -2,6 +2,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   {{ hugo.Generator }}
+  {{ $summary := trim (.Summary | plainify | htmlUnescape) "\n\r"
+    | default .Title }}
+  <meta name="description" content="{{ $summary }}">
   <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | absURL }}">
   {{ $title := print .Title " | " .Site.Title }}
   {{ if .IsHome }}
