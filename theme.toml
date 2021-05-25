@@ -5,7 +5,7 @@ description = "A vanilla Bootstrap theme for Hugo"
 homepage = "https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme"
 tags = ["home", "blog", "tags", "bootstrap", "minimal", "clean", "simple", "feather"]
 features = ["home", "blog", "tags", "bootstrap", "minimal", "clean", "simple", "feather"]
-min_version = "0.60.1"
+min_version = "0.81.0"
 
 [author]
   name = "Zachary Betz"
