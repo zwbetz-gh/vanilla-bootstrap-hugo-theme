@@ -1,3 +1,9 @@
+⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
+**WARNING:** This repo is no longer maintained. It's archived and read-only.
+
+⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
 # Vanilla Bootstrap
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c8f8a93c-33b9-48bc-b4d8-500c79b1b0ae/deploy-status)](https://app.netlify.com/sites/vanilla-bootstrap-hugo-theme/deploys)
